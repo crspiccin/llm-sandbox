@@ -23,3 +23,8 @@ For environment deactivation, run:
 ```bash
 deactivate
 ```
+
+> To run OpenAI API's you must have a secret key and put it on .env file like the following:
+```
+OPENAI_API_KEY="<key>"
+```
