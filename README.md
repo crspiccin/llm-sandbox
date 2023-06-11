@@ -1,6 +1,6 @@
 # llm-sandbox
 
-This is a repo for my studies on large language models. On */py* folder, it has jupyter notebook for prototyping. The notebook */py/llm.ipynb* has a study based on a pdf article, it shows how we can use private data with large language models. It's like a conversation with the document.
+This is a repo for my studies on large language models using [langchain](https://python.langchain.com/en/latest/index.html#). There are use-case examples like using embeddings to turn private documents into a chat conversation and a script to code scaffolding for a microservice.  
 
 In order to run python scripts:
 
