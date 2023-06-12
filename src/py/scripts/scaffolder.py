@@ -25,23 +25,21 @@ def load_config():
 
 
 
+# def run_chat_model():
+#     print('starting the model ')
+#     chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
 
+#     system_template = "Act as a seasoned senior software developer specialist in {language}"
+#     human_template = "Create a {entity} entity following hexagonal architecture with services layer covered by unit test including operations like create, update, read and delete following SQL ANSI on a repository layer, and expose it on adapter layer by a {api_type} api."
 
-def run_chat_model():
-    print('starting the model ')
-    chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
+#     chat_prompt = ChatPromptTemplate.from_messages([SystemMessagePromptTemplate.from_template(system_template), HumanMessagePromptTemplate.from_template(human_template)])
 
-    system_template = "Act as a seasoned senior software developer specialist in {language}"
-    human_template = "Create a {entity} entity following hexagonal architecture with services layer covered by unit test including operations like create, update, read and delete following SQL ANSI on a repository layer, and expose it on adapter layer by a {api_type} api."
+#     messages = chat_prompt.format_prompt(language="python", entity="Transaction", api_type="REST").to_messages()
 
-    chat_prompt = ChatPromptTemplate.from_messages([SystemMessagePromptTemplate.from_template(system_template), HumanMessagePromptTemplate.from_template(human_template)])
+#     messages.append(SystemMessage(content="On each file put BREAK at the beginning followed by filename"))
 
-    messages = chat_prompt.format_prompt(language="python", entity="Transaction", api_type="REST").to_messages()
-
-    messages.append(SystemMessage(content="On each file put BREAK at the beginning followed by filename"))
-
-    content = chat(messages).content
-    return content
+#     content = chat(messages).content
+#     return content
 
 def run_llm_chain_model(config_file):
     print('Starting the llm model ...')
