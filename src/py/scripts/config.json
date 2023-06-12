@@ -1,0 +1,8 @@
+{
+	"language": "typescript",
+	"entity": "Transaction",
+	"api_type": "Rest",
+	"prompt_template": "Act as a senior software developer specialist in {language}, make an example of a {entity} entity microservice following hexagonal architecture with a service layer including operations like create, update, read and delete and putting SQL ANSI on a repository layer, exposing it on adapter layer by a {api_type} api,create unit test for the services layer,create the build file with the dependencies necessary to build the service. On each file put in the first line the word BREAK, on the second line the file name and on the remaining lines the source body",
+	"temperature": 0.3,
+	"output_dir": "./output/"
+}
